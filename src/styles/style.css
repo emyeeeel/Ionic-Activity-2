@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+*{
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}  
+
+.background-container {
+    background-image: url('../assets/images/banner.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.checked{
+    color: yellow;
+}
+.review-text{
+    padding-left: 5px;
+}
+
+.plus-icon {
+    width: 15px;
+    height: 15px;
+}
+
+.star-rating{
+    color: gold;
+}
+
+.row-4{
+    width: 600px;
+    height: 550px;
+    background-image: url('../assets/images/bnr-slid-img1.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    border-radius: 25px;
+    margin: 25px 10px 5px 75px;
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    position: relative;
+}
+
+.product-image{
+    width: 234px;
+    height: 266px;
+    position: absolute;
+    bottom: 5%;
+}
+
+.right-container{
+    float: right;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 52vw;
+    margin-top: 15px;
+}
+
+.row-1 {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+.row-2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center; 
+    height: fit-content;
+}
+
+.row-2 > .web {
+    margin: 0;
+}
+
+.row-2 > .mobile {
+    display: none;
+}
+
+.row-2 > p {
+    margin: 0;
+    padding-left: 5px;
+}
+
+.row-3 {
+    padding-right: 200px;
+}
+
+.row-3 > .web{
+    margin: 0;
+}
+
+.row-3 > p{
+    font-weight: bold;
+    font-size: 50px;
+}
+
+.row-3 > .mobile{
+    margin: 0;
+    display: none;
+}
+
+
+@media only screen and (max-width: 500px) {
+    .right-container{
+        width: 100%;
+    }
+    [class*="row-"] {
+        width: calc(100% - 30px);
+        margin-left: 15px; 
+        margin-right: 15px; 
+    }
+    .row-4{
+        height: 450px;
+    }
+    .product-image {
+        width: 211.05px;
+        height: 239.4px;
+    }
+    .row-2 > .web{
+        display: none;
+    }
+    .row-2 > .mobile{
+        display: block;
+        color: #02A1FC;
+    }
+    .row-3{
+        padding: 0;
+    }
+    .row-3 > .web{
+        display: none;
+    }
+    .row-3 > .mobile{
+        display: block;
+        font-size: 30px;
+    }
+}
